@@ -1,5 +1,4 @@
 import os
-from queue import Empty
 from art import logo
 
 mem = None
