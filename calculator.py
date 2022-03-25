@@ -8,7 +8,7 @@ def calculate(n1,n2,operation):
     if operation == "-": return n1-n2
     if operation == "*": return n1*n2
     if operation == "/": return n1/n2
-    return "No valid input"
+    print("No valid input")
 
 while True:
     os.system('cls||clear')
