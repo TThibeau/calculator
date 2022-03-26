@@ -3,11 +3,11 @@ from art import logo
 
 mem = None
 
-def calculate(n1,n2,operation):
-    if operation == "+": return n1+n2
-    if operation == "-": return n1-n2
-    if operation == "*": return n1*n2
-    if operation == "/": return n1/n2
+def calculate(n1,n2,op):
+    if op == "+": return n1+n2
+    if op == "-": return n1-n2
+    if op == "*": return n1*n2
+    if op == "/": return n1/n2
     print("No valid input")
 
 while True:
@@ -17,13 +17,13 @@ while True:
     if mem is None: n1 = float(input("What's the first number?: "))
     if mem is not None: 
         print(f"Previous number: {mem}")
-        n1 = mem
+        nr1 = mem
 
     operation = input("+\n-\n*\n/\nPick an operation: ")
-    n2 = float(input("What's the next number?: "))
-    result = round(calculate(n1,n2,operation),2)
+    nr2 = float(input("What's the next number?: "))
+    result = round(calculate(nr1,nr2,operation),2)
 
-    print(f"{n1} {operation} {n2} = {result}") 
+    print(f"{nr1} {operation} {nr2} = {result}") 
     
     choice = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation: ").lower()
 
