@@ -14,7 +14,7 @@ while True:
     os.system('cls||clear')
     print(f"{logo}\n") 
 
-    if mem is None: n1 = float(input("What's the first number?: "))
+    if mem is None: nr1 = float(input("What's the first number?: "))
     if mem is not None: 
         print(f"Previous number: {mem}")
         nr1 = mem
